@@ -2,8 +2,7 @@ package trimestre3;
 
 public class Campo {
 
-        private String name;
-        private String unit;
+        private String name, unit;
         private int decPrecision;
 
     public Campo(String name, String unit, int decPrecision) {

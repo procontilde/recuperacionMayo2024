@@ -9,10 +9,10 @@ public class ejercicio2_1Producto {
     public ejercicio2_1Producto(int codigo, String descripcion, double precio) {
 
         if (codigo < 0) this.codigo = 0;
-        else this.codigo = codigo;
+            else this.codigo = codigo;
         this.descripcion = descripcion;
         if (precio < 0) this.precio = 0;
-        else this.precio = precio;
+            else this.precio = precio;
 
     }
 

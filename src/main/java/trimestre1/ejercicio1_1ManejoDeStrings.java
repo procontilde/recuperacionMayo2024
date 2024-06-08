@@ -35,9 +35,9 @@ public class ejercicio1_1ManejoDeStrings {
 
         }
 
-        System.out.println("- Letras: " + letras);
-        System.out.println("- Vocales: " + vocales);
-        System.out.println("- Espacios: " + espacios);
+        System.out.println("Letras: " + letras);
+        System.out.println("Vocales: " + vocales);
+        System.out.println("Espacios: " + espacios);
 
         miScan.close();
 
@@ -47,7 +47,33 @@ public class ejercicio1_1ManejoDeStrings {
 
         c = Character.toLowerCase(c);
 
-        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+        switch (c) {
+
+            case 'a':
+
+                return true;
+
+            case 'e':
+
+                return true;
+
+            case 'i':
+
+                return true;
+
+            case 'o':
+
+                return true;
+
+            case 'u':
+
+                return true;
+
+            default:
+
+                return false;
+
+        }
 
     }
 

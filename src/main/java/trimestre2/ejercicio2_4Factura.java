@@ -32,11 +32,7 @@ public class ejercicio2_4Factura {
 
     public ejercicio2_3LineaFactura buscarLineaFactura(int codigoProducto) {
 
-        for (ejercicio2_3LineaFactura linea : lineasFactura) {
-
-            if (linea.getProducto().getCodigo() == codigoProducto) return linea;
-
-        }
+        for (ejercicio2_3LineaFactura linea : lineasFactura) if (linea.getProducto().getCodigo() == codigoProducto) return linea;
 
         return null;
 

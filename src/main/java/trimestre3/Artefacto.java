@@ -11,8 +11,7 @@ import java.io.FileReader;
 
 public class Artefacto {
 
-    private String artifact;
-    private String architecture;
+    private String artifact, architecture;
     private int productID;
     private List<Sensor> sensors;
 

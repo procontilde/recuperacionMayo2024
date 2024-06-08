@@ -12,12 +12,12 @@ public class ejercicio1_4ValorASCII {
 
         for (int i = 0; i < 10; i++) {
 
-            System.out.println("Introduce la palabra " + (i + 1) + ":");
+            System.out.println("Introduzca la palabra " + (i + 1) + ":");
             palabras[i] = miScan.nextLine();
 
             while (palabras[i].isEmpty()) {
 
-                System.out.println("Por favor, introduce una palabra válida:");
+                System.out.println("Debe introducir una palabra válida:");
                 palabras[i] = miScan.nextLine();
 
             }

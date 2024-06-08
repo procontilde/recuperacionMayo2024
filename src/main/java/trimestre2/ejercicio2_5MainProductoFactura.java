@@ -67,14 +67,14 @@ public class ejercicio2_5MainProductoFactura {
 
         private static void crearFactura() {
 
-            System.out.print("Ingresa el código de la factura: ");
+            System.out.print("Introduzca el código de la factura: ");
             int codigoFactura = Integer.valueOf(miScan.nextLine());
-            System.out.print("Ingresa la fecha de la factura: ");
+            System.out.print("Introduzca la fecha de la factura: ");
             String fecha = miScan.nextLine();
 
             ejercicio2_4Factura factura = new ejercicio2_4Factura(codigoFactura, fecha);
             mapaFacturas.put(codigoFactura, factura);
-            System.out.println("Factura creada con éxito.");
+            System.out.println("Factura creada.");
 
         }
 
@@ -92,7 +92,7 @@ public class ejercicio2_5MainProductoFactura {
 
         private static void agregarProductoFactura() {
 
-            System.out.print("Ingresa el código de la factura: ");
+            System.out.print("Introduzca el código de la factura: ");
             int codigoFactura = Integer.valueOf(miScan.nextLine());
 
             ejercicio2_4Factura factura = mapaFacturas.get(codigoFactura);
@@ -104,26 +104,26 @@ public class ejercicio2_5MainProductoFactura {
 
             }
 
-            System.out.print("Ingresa el código del producto: ");
+            System.out.print("Introduzca el código del producto: ");
             int codigoProducto = Integer.valueOf(miScan.nextLine());
-            System.out.print("Ingresa la descripción del producto: ");
+            System.out.print("Introduzca la descripción del producto: ");
             String descripcion = miScan.nextLine();
-            System.out.print("Ingresa el precio del producto: ");
+            System.out.print("Introduzca el precio del producto: ");
             double precio = Double.valueOf(miScan.nextLine());
-            System.out.print("Ingresa la cantidad: ");
+            System.out.print("Introduzca la cantidad: ");
             int cantidad = Integer.valueOf(miScan.nextLine());
 
             ejercicio2_1Producto producto = new ejercicio2_1Producto(codigoProducto, descripcion, precio);
             ejercicio2_3LineaFactura lineaFactura = new ejercicio2_3LineaFactura(producto, cantidad);
 
             factura.agregarLineaFactura(lineaFactura);
-            System.out.println("Producto añadido a la factura con éxito.");
+            System.out.println("Producto añadido a la factura.");
 
         }
 
         private static void eliminarProductoFactura() {
 
-            System.out.print("Ingresa el código de la factura: ");
+            System.out.print("Introduzca el código de la factura: ");
             int codigoFactura = Integer.valueOf(miScan.nextLine());
 
             ejercicio2_4Factura factura = mapaFacturas.get(codigoFactura);
@@ -135,7 +135,7 @@ public class ejercicio2_5MainProductoFactura {
 
             }
 
-            System.out.print("Ingresa el código del producto a eliminar: ");
+            System.out.print("Introduzca el código del producto a eliminar: ");
             int codigoProducto = Integer.valueOf(miScan.nextLine());
 
             ejercicio2_3LineaFactura lineaFactura = factura.buscarLineaFactura(codigoProducto);
@@ -148,13 +148,13 @@ public class ejercicio2_5MainProductoFactura {
             }
 
             factura.eliminarLineaFactura(lineaFactura);
-            System.out.println("Producto eliminado de la factura con éxito.");
+            System.out.println("Producto eliminado de la factura.");
 
         }
 
         private static void mostrarTotalFactura() {
 
-            System.out.print("Ingresa el código de la factura: ");
+            System.out.print("Introduzca el código de la factura: ");
             int codigoFactura = Integer.valueOf(miScan.nextLine());
 
             ejercicio2_4Factura factura = mapaFacturas.get(codigoFactura);
